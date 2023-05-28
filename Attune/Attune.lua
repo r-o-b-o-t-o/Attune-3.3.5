@@ -862,8 +862,8 @@ function Attune:OnEnable()
 	self:RegisterEvent("CHAT_MSG_ADDON")
 	self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	self:RegisterEvent("PLAYER_LEVEL_UP")
-	--self:RegisterEvent("QUEST_ACCEPTED") Doesn't exist in 2.4.3
-	--self:RegisterEvent("QUEST_TURNED_IN") Doesn't exist in 2.4.3
+	self:RegisterEvent("QUEST_ACCEPTED")
+	--self:RegisterEvent("QUEST_TURNED_IN")
 	--self:RegisterEvent("UPDATE_FACTION")
 	self:RegisterEvent("BAG_UPDATE")
 	self:RegisterEvent("GOSSIP_SHOW")
