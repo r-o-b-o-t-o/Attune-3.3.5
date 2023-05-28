@@ -864,20 +864,7 @@ function Attune:OnEnable()
 	Attune:RegisterComm(attunelocal_versionprefix)
 	Attune:RegisterComm(attunelocal_syncprefix)
 
-	self:RegisterEvent("CHAT_MSG_ADDON")
-	self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-	self:RegisterEvent("PLAYER_LEVEL_UP")
-	self:RegisterEvent("QUEST_ACCEPTED")
-	--self:RegisterEvent("QUEST_TURNED_IN")
-	--self:RegisterEvent("UPDATE_FACTION")
-	self:RegisterEvent("BAG_UPDATE")
-	self:RegisterEvent("GOSSIP_SHOW")
-	self:RegisterEvent("QUEST_DETAIL")
-	self:RegisterEvent("CHAT_MSG_SYSTEM") -- to detect if we're sending survey response to a player that logged out or something
-	self:RegisterEvent("PLAYER_GUILD_UPDATE") -- used to check for f.x. load so we get guildname setup asap. I guess also for when gkicked/gquit
-	self:RegisterEvent("ZONE_CHANGED_NEW_AREA")-- to complete attunements not registered when entering a zone
 	self:RegisterEvent("QUEST_QUERY_COMPLETE")
-
 
 	QueryQuestsCompleted()
 end
@@ -996,6 +983,21 @@ function Attune:OnEnableEnd()
 	
 	--this is per character as it could cause problems with alliance vs horde last viewed (ex if last viewed is Honor Hold)
 	if AttuneLastViewed == nil then AttuneLastViewed = Attune_Data.attunes[1].EXPAC.."\001".. Attune_Data.attunes[1].GROUP.."\001"..Attune_Data.attunes[1].ID end --select first in the list by default (should be MC, same alliance/horde)
+
+
+	self:RegisterEvent("CHAT_MSG_ADDON")
+	self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+	self:RegisterEvent("PLAYER_LEVEL_UP")
+	self:RegisterEvent("QUEST_ACCEPTED")
+	--self:RegisterEvent("QUEST_TURNED_IN")
+	--self:RegisterEvent("UPDATE_FACTION")
+	self:RegisterEvent("BAG_UPDATE")
+	self:RegisterEvent("GOSSIP_SHOW")
+	self:RegisterEvent("QUEST_DETAIL")
+	self:RegisterEvent("CHAT_MSG_SYSTEM") -- to detect if we're sending survey response to a player that logged out or something
+	self:RegisterEvent("PLAYER_GUILD_UPDATE") -- used to check for f.x. load so we get guildname setup asap. I guess also for when gkicked/gquit
+	self:RegisterEvent("ZONE_CHANGED_NEW_AREA")-- to complete attunements not registered when entering a zone
+
 
 	Attune_UpdateLogs()
 	Attune_CheckProgress() -- get your own standing
