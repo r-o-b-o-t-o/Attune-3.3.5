@@ -2788,7 +2788,6 @@ end
 -------------------------------------------------------------------------
 
 function Attune_Frame()
-
 	--guildName, guildRankName, guildRankIndex = GetGuildInfo("player");
 	--if guildName ~= nil then attunelocal_myguild = guildName end
 
@@ -3258,7 +3257,7 @@ function Attune_CreateNode(step, parent, posX, posY)
 	local exist = false
 	for _, f in ipairs(attunelocal_frames) do if f == "Attune_Node_"..step.ID then exist = true end end
 	if exist then 	fnode = _G["Attune_Node_"..step.ID] -- reusing
-	else			fnode = CreateFrame("Button", "Attune_Node_"..step.ID, parent, BackdropTemplateMixin and "BackdropTemplate" or nil)
+	else			fnode = CreateFrame("Button", "Attune_Node_"..step.ID, parent, BackdropTemplateMixin)
 					table.insert(attunelocal_frames, "Attune_Node_"..step.ID) -- recording, to reuse
 	end
 	fnode:SetParent(parent)
@@ -5646,7 +5645,7 @@ function Attune_StartSync()
 	local exist = false
 	for _, f in ipairs(attunelocal_syncProgress_frames) do if f == "Attune_SyncProgress_Frame" then exist = true end end
 	if exist then 	attunelocal_syncProgressWidget = _G["Attune_SyncProgress_Frame"] -- reuse
-	else			attunelocal_syncProgressWidget = CreateFrame("Frame", "Attune_SyncProgress_Frame", UIParent, BackdropTemplateMixin and "BackdropTemplate" or nil)
+	else			attunelocal_syncProgressWidget = CreateFrame("Frame", "Attune_SyncProgress_Frame", UIParent, BackdropTemplateMixin)
 					table.insert(attunelocal_syncProgress_frames, "Attune_SyncProgress_Frame") -- recording, to reuse
 	end
 
@@ -5682,7 +5681,7 @@ function Attune_StartSync()
 	local exist = false
 	for _, f in ipairs(attunelocal_syncProgress_frames) do if f == "Attune_SyncProgress_StatusBar" then exist = true end end
 	if exist then 	attunelocal_syncProgressStatusBar = _G["Attune_SyncProgress_StatusBar"] -- reuse
-	else			attunelocal_syncProgressStatusBar = CreateFrame("StatusBar", "Attune_SyncProgress_StatusBar", attunelocal_syncProgressWidget, BackdropTemplateMixin and "BackdropTemplate" or nil)
+	else			attunelocal_syncProgressStatusBar = CreateFrame("StatusBar", "Attune_SyncProgress_StatusBar", attunelocal_syncProgressWidget, BackdropTemplateMixin)
 					table.insert(attunelocal_syncProgress_frames, "Attune_SyncProgress_StatusBar") -- recording, to reuse
 	end
 	attunelocal_syncProgressStatusBar:SetPoint("TOPLEFT",attunelocal_syncProgressWidget, 10, -26)
