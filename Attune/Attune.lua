@@ -1024,8 +1024,7 @@ function Attune:OnEnable()
 				Attune_SlashCommandHandler("")
 			elseif button=="RightButton" then
 				InterfaceOptionsFrame_Show()
-				--InterfaceOptionsFrame_OpenToCategory("Attune") Doesn't exist in 2.4.3
-				InterfaceOptionsFrame_OpenToFrame("Attune")
+				InterfaceOptionsFrame_OpenToCategory("Attune")
 			end
 		end,
 		OnTooltipShow = function(tooltip)
