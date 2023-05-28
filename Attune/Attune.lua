@@ -901,7 +901,7 @@ function Attune:OnEnableEnd()
 	if Attune_DB.minimapbuttonpos == nil then Attune_DB.minimapbuttonpos = {} end
 	if Attune_DB.minimapbuttonpos.hide == nil then Attune_DB.minimapbuttonpos.hide = false end
 	if Attune_DB.autosurvey == nil then Attune_DB.autosurvey = false end
-	if Attune_DB.websiteUrl == nil then Attune_DB.websiteUrl = "https://tbc.wowhead.com" end
+	if Attune_DB.websiteUrl == nil then Attune_DB.websiteUrl = "https://wotlk.wowhead.com" end
 	if TreeExpandStatus == nil then TreeExpandStatus = {} end
 
 	if Attune_DB.heroicRequireHonored == nil then 
