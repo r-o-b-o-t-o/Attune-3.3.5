@@ -811,17 +811,17 @@ function Attune:GetFactionSnapshot()
 end
 
 
-function Attune_GetFactionInfoByID(factionIDparam) -- replaces function implemented later than 2.4.3 - factionIDparam comes in as string
-	local name, standing, earned
+-- function Attune_GetFactionInfoByID(factionIDparam) -- replaces function implemented later than 2.4.3 - factionIDparam comes in as string
+-- 	local name, standing, earned
 
-	if attunelocal_factionSnapshot[tonumber(factionIDparam)] ~= nil then
-		name = attunelocal_factionSnapshot[tonumber(factionIDparam)][1]
-		standing = attunelocal_factionSnapshot[tonumber(factionIDparam)][2]
-		earned = attunelocal_factionSnapshot[tonumber(factionIDparam)][3]
-	end
+-- 	if attunelocal_factionSnapshot[tonumber(factionIDparam)] ~= nil then
+-- 		name = attunelocal_factionSnapshot[tonumber(factionIDparam)][1]
+-- 		standing = attunelocal_factionSnapshot[tonumber(factionIDparam)][2]
+-- 		earned = attunelocal_factionSnapshot[tonumber(factionIDparam)][3]
+-- 	end
 
-	return name, standing, earned
-end
+-- 	return name, standing, earned
+-- end
 
 function Attune:GetFactionNameFromID(factionID)
 	local factionIDasNum = tonumber(factionID)
@@ -2172,8 +2172,8 @@ function Attune:UpdateRepStuff()
 				--loop on the all the character's factions
 				local factionIndex = 1
 
-				--local name, _, _, _, _, earnedValue = GetFactionInfoByID(s.LOCATION)
-				local name, standingID, earnedValue = Attune_GetFactionInfoByID(s.LOCATION)
+				local name, _, standing, _, _, earnedValue = GetFactionInfoByID(s.LOCATION)
+				--local name, standingID, earnedValue = Attune_GetFactionInfoByID(s.LOCATION)
 
 				if name ~= nil then
 					Attune_DB.toons[attunelocal_charKey].reps[s.LOCATION] = {}
@@ -2296,8 +2296,8 @@ function Attune_CheckProgress()
 
 							--loop on the all the character's factions
 							local factionIndex = 1
-							--local name, _, _, _, _, earnedValue = GetFactionInfoByID(s.LOCATION)
-							local name, standingID, earnedValue = Attune_GetFactionInfoByID(s.LOCATION)
+							local name, _, standingID, _, _, earnedValue = GetFactionInfoByID(s.LOCATION)
+							--local name, standingID, earnedValue = Attune_GetFactionInfoByID(s.LOCATION)
 							
 							if name ~= nil then
 								att.reps[s.LOCATION] = {}
@@ -2593,9 +2593,11 @@ function Attune_recursePreviousSteps(who, aID, follows)
 										--print("Prev not done")
 										-- check aldor/scryer rep 
 										-- if both then I guess congrats to the player, but then we cannot complete the tree
-										local aldorName, standingIDAldor, earnedValueAldor = Attune_GetFactionInfoByID("932")
+										local aldorName, _, standingIDAldor, _, _, earnedValueAldor = GetFactionInfoByID("932")
+										--local aldorName, standingIDAldor, earnedValueAldor = Attune_GetFactionInfoByID("932")
 										--print("Raw aldor: "..tostring(aldorName).."  "..tostring(standingIDAldor).."  "..tostring(earnedValueAldor))
-										local scryersName, standingIDScryers, earnedValueScryers = Attune_GetFactionInfoByID("934")
+										local scryersName, _, standingIDScryers, _, _, earnedValueScryers = GetFactionInfoByID("934")
+										--local scryersName, standingIDScryers, earnedValueScryers = Attune_GetFactionInfoByID("934")
 										--print("Raw scryers: "..tostring(scryersName).."  "..tostring(standingIDScryers).."  "..tostring(earnedValueScryers))
 
 										local friendlyWithAldor = false
