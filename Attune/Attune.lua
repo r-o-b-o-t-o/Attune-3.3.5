@@ -662,6 +662,11 @@ function Attune:IsQuestCompleted(questid)
 		end
 	end
 
+	if GetQuestsCompleted()[tonumber(questid)] then
+		AttuneCompletedQuests.completedQuests[tonumber(questid)] = {}
+		return true
+	end
+
 	return false
 end
 
@@ -871,7 +876,14 @@ function Attune:OnEnable()
 	self:RegisterEvent("CHAT_MSG_SYSTEM") -- to detect if we're sending survey response to a player that logged out or something
 	self:RegisterEvent("PLAYER_GUILD_UPDATE") -- used to check for f.x. load so we get guildname setup asap. I guess also for when gkicked/gquit
 	self:RegisterEvent("ZONE_CHANGED_NEW_AREA")-- to complete attunements not registered when entering a zone
+	self:RegisterEvent("QUEST_QUERY_COMPLETE")
 
+
+	QueryQuestsCompleted()
+end
+
+
+function Attune:OnEnableEnd()
 	_, _, _, patch	 = GetBuildInfo() -- patch is only really used to determine if heroic keys are available at honored or revered
 	-- we will do a complete ghetto move and set the patch level in actual settings, giving people an option to select whether honored or revered is heroic time
 	-- this is due to some variance in how pservers do things. 
@@ -2126,6 +2138,11 @@ function Attune:ZONE_CHANGED_NEW_AREA(event)
 		end
 	end
 
+end
+
+
+function Attune:QUEST_QUERY_COMPLETE(event)
+	self:OnEnableEnd()
 end
 
 
