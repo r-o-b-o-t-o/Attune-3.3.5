@@ -57,9 +57,10 @@ local function Frame_OnMouseDown(frame)
 	AceGUI:ClearFocus()
 end
 
-local function Slider_OnValueChanged(frame, newvalue)
+local function Slider_OnValueChanged(frame)
 	local self = frame.obj
 	if not frame.setup then
+		local newvalue = frame:GetValue()
 		if newvalue ~= self.value and not self.disabled then
 			self.value = newvalue
 			self:Fire("OnValueChanged", newvalue)
@@ -101,7 +102,7 @@ local function EditBox_OnEnterPressed(frame)
 	else
 		value = tonumber(value)
 	end
-
+	
 	if value then
 		PlaySound("igMainMenuOptionCheckBoxOn")
 		self.slider:SetValue(value)
@@ -137,7 +138,6 @@ local methods = {
 		self.disabled = disabled
 		if disabled then
 			self.slider:EnableMouse(false)
-			self.slider:GetThumbTexture():SetDesaturated(true) -- ElvUI
 			self.label:SetTextColor(.5, .5, .5)
 			self.hightext:SetTextColor(.5, .5, .5)
 			self.lowtext:SetTextColor(.5, .5, .5)
@@ -147,7 +147,6 @@ local methods = {
 			self.editbox:ClearFocus()
 		else
 			self.slider:EnableMouse(true)
-			self.slider:GetThumbTexture():SetDesaturated(false) -- ElvUI
 			self.label:SetTextColor(1, .82, 0)
 			self.hightext:SetTextColor(1, 1, 1)
 			self.lowtext:SetTextColor(1, 1, 1)
