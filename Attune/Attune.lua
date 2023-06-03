@@ -29,6 +29,7 @@ Lang = LibStub("AceLocale-3.0"):GetLocale("Attune")
 local AceGUI = LibStub("AceGUI-3.0")
 local _G = getfenv(0)
 
+local attuneInitialized = false
 local attunelocal_ldb = LibStub("LibDataBroker-1.1")
 local Attune_Broker = nil
 local attunelocal_minimapicon = LibStub("LibDBIcon-1.0")
@@ -2144,7 +2145,10 @@ end
 
 
 function Attune:QUEST_QUERY_COMPLETE(event)
-	self:OnEnableEnd()
+	if not attuneInitialized then
+		attuneInitialized = true
+		self:OnEnableEnd()
+	end
 end
 
 
