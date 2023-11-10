@@ -709,8 +709,8 @@ Lang["Q1_9637"] = "La petición de Kalynna"			-- https://es.tbc.wowhead.com/ques
 Lang["Q2_9637"] = "Kalynna Lathrojo quiere recuperar el Escrito del Ocaso del brujo supremo Malbisal en Las Salas Arrasadas de la Ciudadela del Fuego Infernal y el Libro de los Nombres Olvidados de Tejeoscuro Syth en las Salas Sethekk de Auchindoun."
 Lang["Q1_9644"] = "Nocturno"			-- https://es.tbc.wowhead.com/quest=9644
 Lang["Q2_9644"] = "Ve a El Bancal del Maestro en Karazhan y usa la urna ennegrecida para invocar a Nocturno. Recupera la esencia arcana intangible del cadáver de Nocturno y llévasela al archimago Alturus."
-Lang["Q1_10901"] = "La cayada de Kar'desh"			-- https://es.tbc.wowhead.com/quest=10901
-Lang["Q2_10901"] = "Skar'this el Herético, en El Reciento de los Esclavos heroico, en la Reserva Colmillo Torcido, quiere que le lleves el sello terráneo y el sello llameante."
+Lang["Q1_13431"] = "La cayada de Kar'desh"			-- https://es.tbc.wowhead.com/quest=13431
+Lang["Q2_13431"] = "Skar'this el Herético, en El Reciento de los Esclavos heroico, en la Reserva Colmillo Torcido, quiere que le lleves el sello terráneo y el sello llameante."
 Lang["Q1_10900"] = "La marca de Vashj"			-- https://es.tbc.wowhead.com/quest=10900
 Lang["Q2_10900"] = ""
 Lang["Q1_10681"] = "La Mano de Gul'dan"			-- https://es.tbc.wowhead.com/quest=10681

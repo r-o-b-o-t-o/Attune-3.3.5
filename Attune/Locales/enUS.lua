@@ -738,8 +738,8 @@ Lang["Q1_9637"] = "Kalynna's Request"			-- https://www.thegeekcrusade-serveur.co
 Lang["Q2_9637"] = "Kalynna Lathred wants you to retrieve the Tome of Dusk from Grand Warlock Nethekurse in the Shattered Halls of Hellfire Citadel and the Book of Forgotten Names from Darkweaver Syth in the Sethekk Halls in Auchindoun."
 Lang["Q1_9644"] = "Nightbane"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9644
 Lang["Q2_9644"] = "Go to the Master's Terrace in Karazhan and use Kalynna's Urn to summon Nightbane. Retrieve the Faint Arcane Essence from Nightbane's corpse and bring it to Archmage Alturus."
-Lang["Q1_10901"] = "The Cudgel of Kar'desh"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10901
-Lang["Q2_10901"] = "Skar'this the Heretic in the heroic Slave Pens of Coilfang Reservoir wants you to bring him the Earthen Signet and the Blazing Signet."
+Lang["Q1_13431"] = "The Cudgel of Kar'desh"			-- https://www.thegeekcrusade-serveur.com/db/?quest=13431
+Lang["Q2_13431"] = "Skar'this the Heretic in the heroic Slave Pens of Coilfang Reservoir wants you to bring him the Earthen Signet and the Blazing Signet."
 Lang["Q1_10900"] = "The Mark of Vashj"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10900
 Lang["Q2_10900"] = ""
 Lang["Q1_10681"] = "The Hand of Gul'dan"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10681

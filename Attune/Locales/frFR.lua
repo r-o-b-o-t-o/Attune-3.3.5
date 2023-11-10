@@ -738,8 +738,8 @@ Lang["Q1_9637"] = "La requête de Kalynna"			-- https://www.thegeekcrusade-serve
 Lang["Q2_9637"] = "Kalynna Rougelatte veut que vous récupériez le Tome du crépuscule sur le Grand démoniste Néanathème dans la citadelle des Flammes infernales, et le Livre des noms oubliés sur le Tisseur d'ombre Syth dans les salles des Sethekk à Auchindoun."
 Lang["Q1_9644"] = "Plaie-de-nuit"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9644
 Lang["Q2_9644"] = "Allez sur la Terrasse du Maître à Karazhan et utilisez l'Urne de Kalynna pour invoquer Plaie-de-nuit. Récupérez l'Essence arcanique voilée sur le cadavre de Plaie-de-nuit et rapportez-la à l'archimage Alturus."
-Lang["Q1_10901"] = "Le gourdin de Kar'desh"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10901
-Lang["Q2_10901"] = "Skar’this l’Hérétique, dans les Enclos aux esclaves héroïques du Réservoir de Glissecroc, veut que vous lui apportiez la Chevalière terrestre et la Chevalière flamboyante."
+Lang["Q1_13431"] = "Le gourdin de Kar'desh"			-- https://www.thegeekcrusade-serveur.com/db/?quest=13431
+Lang["Q2_13431"] = "Skar’this l’Hérétique, dans les Enclos aux esclaves héroïques du Réservoir de Glissecroc, veut que vous lui apportiez la Chevalière terrestre et la Chevalière flamboyante."
 Lang["Q1_10900"] = "La marque de Vashj"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10900
 Lang["Q2_10900"] = ""
 Lang["Q1_10681"] = "La main de Gul'dan"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10681

@@ -739,8 +739,8 @@ Lang["Q1_9637"] = "칼린나의 부탁"			-- https://wow.inven.co.kr/dataninfo/w
 Lang["Q2_9637"] = "칼린나 나스레드가 지옥불 성채의 으스러진 손의 전당에 있는 대흑마법사 네더쿠르스로부터 어둠의 고서를, 아킨둔의 세데크 전당에 있는 흑마술사 시스에게서 잊혀진 이름의 고서를 되찾아 달라고 부탁했습니다.\n\n이 퀘스트는 던전 난이도를 영웅으로 설정한 후 수행해야 합니다."
 Lang["Q1_9644"] = "파멸의 어둠"			-- https://wow.inven.co.kr/dataninfo/wdb/edb_quest/detail.php?id=9644
 Lang["Q2_9644"] = "카라잔에 있는 주인의 테라스로 간 후 어둠의 단지를 만져 파멸의 어둠을 소환한 후, 파멸의 어둠의 시체에서 희미한 비전 정수를 되찾은 후 대마법사 알투루스에게 가져가야 합니다."
-Lang["Q1_10901"] = "카르데쉬의 곤봉"			-- https://wow.inven.co.kr/dataninfo/wdb/edb_quest/detail.php?id=10901
-Lang["Q2_10901"] = "갈퀴송곳니 저수지의 용사 강제 노역소에 있는 이단자 스카디스가 땅의 인장과 불의 인장을 가져다 달라고 부탁했습니다.\n\n이 퀘스트는 던전 난이도를 영웅으로 설정한 후 수행해야 합니다."
+Lang["Q1_13431"] = "카르데쉬의 곤봉"			-- https://wow.inven.co.kr/dataninfo/wdb/edb_quest/detail.php?id=13431
+Lang["Q2_13431"] = "갈퀴송곳니 저수지의 용사 강제 노역소에 있는 이단자 스카디스가 땅의 인장과 불의 인장을 가져다 달라고 부탁했습니다.\n\n이 퀘스트는 던전 난이도를 영웅으로 설정한 후 수행해야 합니다."
 Lang["Q1_10900"] = "바쉬의 증표"			-- https://wow.inven.co.kr/dataninfo/wdb/edb_quest/detail.php?id=10900
 Lang["Q2_10900"] = "(바로 완료됨)"
 Lang["Q1_10681"] = "굴단의 손아귀"			-- https://wow.inven.co.kr/dataninfo/wdb/edb_quest/detail.php?id=10681
